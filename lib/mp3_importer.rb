@@ -7,8 +7,11 @@ class MP3Importer
   end
   
   def files
-    song = filename.split(" - ")[1]
-    artist = filename.split(" - ")[0]
+    files = []
+    Dirnew(self.path).each do |file|
+      files << file if file.length > 4
+    end
+    files
   end
   
 end
