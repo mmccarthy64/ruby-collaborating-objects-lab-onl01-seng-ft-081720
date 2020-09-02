@@ -6,7 +6,7 @@ class MP3Importer
     @path = path
   end
   
-  def files(filename)
+  def files
     song = filename.split(" - ")[1]
     artist = filename.split(" - ")[0]
   end
